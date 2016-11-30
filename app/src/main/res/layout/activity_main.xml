@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -22,12 +23,59 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="140dp"
-            android:background="@color/black" />
+            android:background="@color/black" >
+
+            <TextView
+                android:text="91.5\nOPB-FM\nAll Things Considered\nBob Dylan: Nobel Prize in Literature"
+                android:textSize="64sp"
+                android:textColor="@color/green"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/channel_display" />
+        </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/grey" />
+            android:background="@color/grey"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_lock_power_off"
+                android:id="@+id/OnOff" />
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="344dp"
+                android:layout_height="33dp"
+                android:layout_weight="0.41">
+
+                <RadioButton
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset1"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset2"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset3"
+                    android:layout_weight="1" />
+            </RadioGroup>
+        </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>
