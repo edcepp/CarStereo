@@ -79,15 +79,47 @@
                     android:id="@+id/preset3"
                     android:layout_weight="1" />
 
+                <RadioButton
+                    android:text="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset4"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset5"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset6"
+                    android:layout_weight="1" />
+
             </RadioGroup>
             <SeekBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/seekBar"
+                android:id="@+id/volumeBar"
                 android:layout_below="@+id/presets"
                 android:layout_toRightOf="@+id/OnOff"
                 android:layout_weight="1" />
-        </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/arrow_down_float"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/volumeBar"
+                android:layout_marginBottom="19dp"
+                android:id="@+id/volumeDown" />
+
+         </RelativeLayout>
 
     </LinearLayout>
 </RelativeLayout>
