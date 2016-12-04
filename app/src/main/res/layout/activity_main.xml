@@ -22,12 +22,12 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="200dp"
             android:background="@color/black" >
 
             <TextView
                 android:text="91.5\nOPB-FM\nAll Things Considered\nBob Dylan: Nobel Prize in Literature"
-                android:textSize="64sp"
+                android:textSize="32sp"
                 android:textColor="@color/green"
                 android:gravity="center"
                 android:layout_width="match_parent"
@@ -45,6 +45,7 @@
             <ImageButton
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:onClick="powerOn"
                 app:srcCompat="@android:drawable/ic_lock_power_off"
                 android:id="@+id/OnOff" />
 
